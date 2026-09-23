@@ -1,18 +1,844 @@
-<!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HLZF 隐私政策</title><style>body{margin:0;background:#f6f9fd;color:#243247;font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;font-size:16px;line-height:1.8}main{max-width:760px;margin:auto;padding:24px 20px 48px}h1{font-size:26px;color:#0756b8;line-height:1.4}h2{font-size:19px;margin-top:28px;color:#17385d}.meta{color:#607086;font-size:14px}.note{background:#eaf3ff;padding:16px;border-radius:12px}li{margin:8px 0}a{color:#0756b8}p{overflow-wrap:anywhere}@media(prefers-color-scheme:dark){body{background:#111b2a;color:#e6edf7}h1,h2{color:#8bc5ff}.meta{color:#a9b6c8}.note{background:#1b304c}}</style></head>
-<body><main><h1>HLZF 隐私政策</h1><p class="meta" style="color:#000;font-weight:700">更新日期：2026年9月22日 · 生效日期：2026年9月22日</p>
-<p class="note">HLZF 是一款家庭生活管理工具。当前版本无需注册登录，家庭记录保存在本机，不自动上传；用户协议和隐私政策可离线阅读。</p>
-<h2>一、适用范围与运营主体</h2><p>本政策适用于武汉市浩长飒科技有限公司提供的 HLZF Android 应用，说明家务事项、家庭用品、生活计划、周期例行、每周回顾和手动备份功能中的数据处理方式。</p>
-<h2>二、我们处理哪些数据</h2><ul>
-<li><strong>家庭记录：</strong>你输入的事项标题、备注、所属空间、标签、用品数量与单位、补货阈值、计划日期与检查点、例行频率及打卡记录，用于展示、编辑和计算本地进度。这些内容保存在应用本地存储中，不自动发送给我们。</li>
-<li><strong>本地设置：</strong>应用在本机保存协议同意状态、默认家庭空间及入门模板初始化状态。首次进入时会加入默认空间和示例内容，可在应用中编辑或删除，后续启动不重复添加。</li>
-<li><strong>手动备份：</strong>你主动导入或导出时，应用通过 Android 系统文件选择器读取或写入你指定的 JSON 文件，文件包含家庭空间、事项、计划、例行及相关记录。导入替换现有记录前会要求确认。</li>
-<li><strong>支持邮件：</strong>点击“打开邮件”时，应用会将你填写的反馈内容交给所选邮件应用；点击“复制邮箱及内容”时，应用会将邮箱及反馈内容写入系统剪贴板，不读取剪贴板已有内容。仅当你在外部邮件应用中确认发送后，我们才会收到你的邮箱地址、邮件内容及你自行附加的资料，并用于处理建议、咨询或数据请求。应用不会自动附加家庭记录、设备信息或日志。请勿发送与问题无关的敏感信息。</li></ul>
-<h2>三、权限、联网与第三方服务</h2><p>当前版本不申请网络访问权限，家庭记录功能在本地运行，不会自动上传家庭记录。当前版本不申请通讯录、定位、相机、麦克风、通知或广泛存储访问权限；不接入广告、用户统计、社交登录或设备标识采集 SDK，不主动采集 IMEI、IMSI、Android ID、OAID、广告标识符、MAC 地址或设备序列号。</p><p>应用使用 AndroidX/Compose 提供界面与本地功能，使用 Gson 处理本地 JSON 数据，不利用这些组件向我们上传家庭记录。备份只访问你在系统文件选择器中指定的文件，无需授予整个存储空间的访问权限。</p><p>如果你选择云盘作为备份位置，或使用邮件应用发送反馈，相应云盘或邮件服务可能联网并处理所选文件或邮件，其处理方式适用该服务自己的政策；这由你的操作触发，并非 HLZF 自动上传。</p>
-<h2>四、保存、安全与删除</h2><p>家庭记录保存在设备的应用专属存储内，直至你删除记录、清空业务数据、清除应用数据或卸载应用。应用关闭了 Android 自动云备份；系统或设备厂商提供的迁移能力由相应系统管理。</p><p><strong>导出的 JSON 备份未加密。</strong>请保存在可信位置，不要随意分享。卸载应用或清空本地记录不会删除你已经导出的文件或外部服务中的副本，你需要在相应位置自行删除。设备丢失、损坏、误删除或导入覆盖可能造成记录丢失，请提前备份。</p><p>对于主动发来的支持邮件，我们仅在处理请求所需期间及适用法律要求的期限内保存；你可以通过联系邮箱提出查询、更正或删除请求。我们无法远程读取或替你恢复仅保存在设备上的家庭记录。</p>
-<h2>五、共享与披露</h2><p>我们不出售你的家庭记录，也不将本地家庭记录提供给广告或统计服务。你主动选择导出、分享备份或发送邮件时，请确认接收方与内容。对我们收到的支持信息，如依法必须向有权机关提供，将按适用要求处理。</p>
-<h2>六、你的选择和权利</h2><ul><li>无需创建账号，因此没有账号注销流程；停止使用可卸载应用。</li><li>可在对应页面查看、修改或删除事项、计划和例行，在“设置”页导出备份或选择“清空全部家庭记录”删除业务记录。</li><li>“清理缓存”仅处理临时文件，不等于删除家庭记录。彻底清除应用设置和协议同意状态，可使用系统设置中的清除应用数据。</li><li>首次使用可选择不同意协议并退出。更新本政策后，如涉及需要重新取得同意的变更，将通过应用内提示说明并请求确认。</li></ul>
-<h2>七、未成年人</h2><p>未成年人应在监护人指导下阅读本政策和使用本应用。请勿在家庭记录或反馈中填写不必要的身份、健康、财产等敏感信息。监护人可通过下方方式联系我们处理相关请求。</p>
-<h2>八、政策更新</h2><p>本政策依据当前版本实际功能编写。增加联网、账号或第三方数据处理功能时，我们将相应更新说明，并在需要时先取得你的同意。你可在设置中随时查看本政策。</p>
-<h2>九、联系我们</h2><p>运营主体：武汉市浩长飒科技有限公司<br>联系邮箱：zhongjin4568@163.com<br>联系人：李经昆<br>联系电话：18565586537<br>办公地址：湖北省武汉市黄陂区盘龙城经济开发区汤云海路2号盘龙古肆巢立方1栋/单元1层5室</p><p>如对信息处理有疑问或需要行使相关权利，可通过以上方式联系。我们会在核实请求后处理，并在一般情况下于10个工作日内答复。</p>
-</main></body></html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>HLZF隐私政策</title>
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: 宋体;
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+        }
+
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: 微软雅黑;
+            panose-1: 2 11 5 3 2 2 4 2 2 4;
+        }
+
+        @font-face {
+            font-family: "\@微软雅黑";
+            panose-1: 2 11 5 3 2 2 4 2 2 4;
+        }
+
+        @font-face {
+            font-family: "\@宋体";
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+        }
+
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            line-height: normal;
+            font-size: 10.5pt;
+            font-family: "Calibri", "sans-serif";
+            color: windowtext;
+        }
+
+        h1 {
+            mso-style-link: "标题 1 Char";
+            margin-top: 15.0pt;
+            margin-right: 0cm;
+            margin-left: 0cm;
+            text-align: center;
+            line-height: 21.0pt;
+            font-size: 13.0pt;
+            font-family: 宋体;
+            color: #404040;
+            font-weight: bold;
+        }
+
+        h2 {
+            mso-style-link: "标题 2 Char";
+            margin-top: 15.0pt;
+            margin-right: 0cm;
+            margin-bottom: 9.75pt;
+            margin-left: 0cm;
+            line-height: normal;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            color: #404040;
+            font-weight: bold;
+        }
+
+        h3 {
+            mso-style-link: "标题 3 Char";
+            margin-top: 7.5pt;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            line-height: normal;
+            font-size: 11.5pt;
+            font-family: 宋体;
+            color: #4F4F4F;
+            font-weight: bold;
+        }
+
+        a:link, span.MsoHyperlink {
+            color: blue;
+            text-decoration: none none;
+        }
+
+        a:visited, span.MsoHyperlinkFollowed {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        p {
+            margin-top: 7.5pt;
+            margin-right: 0cm;
+            margin-bottom: 7.5pt;
+            margin-left: 0cm;
+            line-height: 18.0pt;
+            font-size: 10.5pt;
+            font-family: 宋体;
+            color: #404040;
+        }
+
+        span
+
+        .2
+        Char {
+            mso-style-name: "标题 2 Char";
+            mso-style-link: "标题 2";
+            font-family: 宋体;
+            color: #404040;
+            font-weight: bold;
+        }
+
+        span.point1 {
+            mso-style-name: point1;
+            font-weight: bold;
+        }
+
+        span
+
+        .3
+        Char {
+            mso-style-name: "标题 3 Char";
+            mso-style-link: "标题 3";
+            font-family: 宋体;
+            color: #4F4F4F;
+            font-weight: bold;
+        }
+
+        span
+
+        .1
+        Char {
+            mso-style-name: "标题 1 Char";
+            mso-style-link: "标题 1";
+            font-family: 宋体;
+            color: #404040;
+            font-weight: bold;
+        }
+
+        p.updatedate, li.updatedate, div.updatedate {
+            mso-style-name: update_date;
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 7.5pt;
+            margin-left: 0cm;
+            text-align: center;
+            line-height: 18.0pt;
+            font-size: 10.0pt;
+            font-family: 宋体;
+            color: #404040;
+        }
+
+        /* Page Definitions */
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 90.0pt 72.0pt 90.0pt;
+            layout-grid: 15.6pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        -->
+    </style>
+
+</head>
+
+<body lang="ZH-CN" link="blue" vlink="purple" style="text-justify-trim:punctuation">
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+
+    <p class="MsoNormal"><b><span style="font-size:14.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">发布日期：2026年09月16日</span></b></p>
+    <p class="MsoNormal"><b><span style="font-size:14.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">更新日期：2026年09月16日</span></b></p>
+    <br>
+    <br>
+
+    <p class="MsoNormal"><b><span style="font-size:14.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">序言</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;HLZF（以下简称“本款产品”）是基于<span lang="EN">Android</span>（安卓）系统、</span><span lang="EN-US" style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">IOS</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（</span><span lang="EN-US" style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">iphone</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">）等设备（以下简称“手机”）的管理及手机内容资源下载工具，包含手机软件的浏览和下载。HLZF由武汉市浩长飒科技有限公司（以下简称“</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我司</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">”）提供。</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">非常感谢您对</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">的信任。</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">保证公司各产品（或服务）在使用您的个人信息的时候遵循“四不三必须”的七个规范，即：<span lang="EN"><br>
+</span>一、不该看的不看<span lang="EN"><br>
+</span>二、不该传的不传<span lang="EN"><br>
+</span>三、不该存的不存<span lang="EN"><br>
+</span>四、不该用的不用<span lang="EN"><br>
+</span>五、一切行为必须明示，尊重用户的知情权和选择权<span lang="EN"><br>
+</span>六、必须经过用户许可<span lang="EN"><br>
+</span>七、必须对收集的用户隐私信息负责</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:14.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">本隐私政策将帮助您了解以下内容：</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">一、相关定义<span lang="EN"><br>
+</span>二、我们如何收集和使用您的个人信息<span lang="EN"><br>
+</span>三、我们如何存储您的个人信息<span lang="EN"><br>
+</span>四、我们如何共享、转让、公开披露您的个人信息<span lang="EN"><br>
+</span>五、我们如何保护您的个人信息<span lang="EN"><br>
+</span>六、您管理个人信息的权利<span lang="EN"><br>
+</span>七、未成年人个人信息保护<span lang="EN"><br>
+</span>八、隐私政策的适用范围<span lang="EN"><br>
+</span>九、隐私政策的变更和修订<span lang="EN"><br>
+</span>十、如何联系我们</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">一、相关定义</span></b></p>
+
+    <p class="MsoNormal"><span lang="EN" style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">1. </span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">个人信息：指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。<span lang="EN"><br>
+<b>2. </b></span><b>个人敏感信息：指包括身份证件号码、个人生物识别信息、银行账号、财产信息、行踪轨迹、交易信息、<span lang="EN">14</span>岁以下（含）儿童信息等的个人信息（我们将在本隐私权政策中对个人敏感信息以粗体进行显著标识）。<span lang="EN"><br>
+</span></b><span lang="EN">3. </span>个人信息删除：指在实现日常业务功能所涉及的系统中去除个人信息的行为，使其保持不可被检索、访问的状态。</span></p>
+    <span lang="EN"  style="color:red;font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">4.自启动说明： </span>为保证消息及时推送等核心功能，应用可能在以下场景申请自启动权限：系统事件触发（如开机启动），定时任务执行（如消息同步），我们承诺仅在用户明确同意后才会启用相关功能</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">二、我们如何收集和使用您的个人信息</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">您在使用HLZF时，我们需要<span lang="EN">/</span>可能需要收集和使用您的一些个人信息，我们收集和使用的您的个人信息类型包括两种：<b>第一种：HLZF产品与<span lang="EN">/</span>或服务的核心业务功能所必需的信息：此类信息为产品与<span lang="EN">/</span>或服务正常运行的必备信息，您须授权我们收集。如您拒绝提供，您将无法正常使用我们的产品或服务；第二种：附加业务功能可能需要收集的信息：此信息为非核心业务功能所需的信息，您可以选择是否授权我们收集。如您拒绝提供，将导致附加业务功能无法实现或无法达到我们拟达到的效果，但不影响您对核心业务功能的正常使用。</b></span></p>
+
+    <p class="MsoNormal"><span style="color:red;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们会通过极光推送SDK（JPush）收集手机型号、设备屏幕分辨率、设备硬件制造商、操作系统版本、系统语言、网络类型、运营商信息、IP地址、WIFI状态信息，用于提供消息推送服务，确保您能及时收到聊天消息、语音通话和视频通话的通知，以不断改进我们的产品。同时，极光推送SDK会收集设备标识符（包括Android ID、GAID、OAID、UAID、IDFA、AAID），用于生成脱敏的终端用户设备唯一性标识，确保消息推送的准确下发和消息设备的准确识别。以上信息不包含不可变更的设备唯一标识（如IMEI、MAC地址、IMSI等），无法直接识别您的个人身份。</span></p>
+    <p class="MsoNormal"><span style="color:red;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们仅在您明确同意隐私政策及推送服务后启用极光推送SDK。极光推送SDK在提供推送服务期间可能会读取上述设备信息并保持必要的推送连接，可能存在周期性读取行为，读取频率由极光推送SDK服务策略决定，目的仅用于推送服务与设备识别。您可在系统或应用设置中关闭推送通知或撤回同意。</span></p>
+
+    <section class="autostart-section">
+        <h3 style="color:red;font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（一）自启动说明</h3>
+        <p>为保证消息及时推送等核心功能，应用可能在以下场景申请自启动权限：</p>
+        <ul>
+            <li>系统事件触发（如开机启动）</li>
+            <li>定时任务执行（如消息同步）</li>
+        </ul>
+        <p>我们承诺仅在用户明确同意后才会启用相关功能</p>
+    </section>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（二）过滤无法使用的软件功能</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为了过滤您手机无法使用的软件，HLZF会收集您<b>手机的系统版本号、屏幕分辨率、运行内存、剩余存储空间信息，</b>并依据这些信息排除您手机无法使用的软件，以保证您在HLZF下载的软件都可安装使用。</span></p>
+
+
+    <p class="MsoNormal"><span style="color:red;font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（三）拍照和相册权限</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为实现</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">扫码和更换头像功能，我们需要<span lang="EN">/</span>获取相机权限和相册权限<b></b></span><b><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span></b><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">，</span></b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">申请权限是为了帮助您完成</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF默认扫码和更换头像功能</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">此功能不会获取用户信息。</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">请放心使用。</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span lang="EN" style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">-</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span></p>
+
+
+    <p class="MsoNormal"><span style="color:red;font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（四）传感器列表权限</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为实现</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">实时计步的功能，我们需要<span lang="EN">/</span>获取传感器列表<b></b></span><b><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span></b><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">，</span></b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">收集这些信息是为了帮助您完成</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF计步功能</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">此功能不会获取用户信息。</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">请放心使用。</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span lang="EN" style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">-</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span></p>
+
+    <p class="MsoNormal"><span style="color:red;font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（五）复制和粘贴版权限</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为实现</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">复制颜色的功能，我们需要<span lang="EN">/</span>使用复制功能<b></b></span><b><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">和</span></b><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">粘贴板功能，</span></b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">收集这些信息是为了帮助您完成</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">此功能不会获取用户信息。</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">请放心使用。</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span lang="EN" style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">-</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span></p>
+
+    <p class="MsoNormal"><span style="color:red;font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（六）录音权限</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为实现</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">语音的功能，我们需要<span lang="EN">/</span>使用录音功能<b></b></span><b><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">和</span></b><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">粘贴板功能，</span></b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">收集这些信息是为了帮助您完成</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">此功能不会获取用户信息。</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">请放心使用。</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span lang="EN" style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">-</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span></p>
+
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（七）第三方SDK信息收集说明</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为了向您提供更好的产品和服务，我们的应用中集成了以下第三方SDK。<b>我们仅在您明确同意本隐私政策后才会初始化和使用这些SDK。</b>以下是各SDK收集信息的详细说明：</span></p>
+
+    <p class="MsoNormal"><b><span style="color:#2E75B6;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">1. 极光推送SDK（JPush）</span></b></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>服务提供方：</b>深圳市和讯华谷信息技术有限公司</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>使用目的：</b>用于向您推送聊天消息、语音通话邀请、视频通话邀请及群聊消息等通知，保障消息的及时准确触达。</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集方式：</b>SDK自动收集</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集的个人信息类型：</b></span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>设备标识符（包括Android ID、GAID、OAID、UAID、IDFA、AAID）： </b>用于生成脱敏的终端用户设备唯一性标识，确保能准确进行消息推送</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称、设备存储空间）：</b>用于保证服务在不同设备上的兼容性，确保消息准确下发</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>网络信息（包括网络类型、运营商信息、IP地址、WIFI状态信息）：</b>用于判断SDK与服务器的网络连接状态，保证服务的稳定性和连续性</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>操作系统信息（包括操作系统版本、系统名称、系统语言）：</b>用于兼容不同系统版本的推送功能</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>推送信息日志：</b>用于查询推送服务记录，了解推送信息送达的情况</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>隐私政策链接：</b><a href="https://www.jiguang.cn/license/privacy" style="color:blue;">https://www.jiguang.cn/license/privacy</a></span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>权限控制：</b>您可在系统设置或应用设置中关闭推送通知</span></p>
+
+    <p class="MsoNormal"><b><span style="color:#2E75B6;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">2. OpenIM即时通讯SDK</span></b></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>服务提供方：</b>OpenIM开源社区</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>使用目的：</b>为您提供即时通讯服务，包括文字、语音、视频聊天功能</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集方式：</b>SDK自动收集</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集的个人信息类型：</b></span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>设备信息：</b>设备型号、系统版本、屏幕分辨率</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>网络信息：</b>IP地址、网络类型</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>用户信息：</b>账号信息、昵称、头像（由您主动提供）</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>消息内容：</b>聊天记录、文件、图片、语音、视频（存储在本地和服务器）</span></p>
+
+    <p class="MsoNormal"><b><span style="color:#2E75B6;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">3. LiveKit音视频SDK</span></b></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>服务提供方：</b>LiveKit Inc.</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>使用目的：</b>为您提供实时音视频通话服务</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集方式：</b>SDK自动收集</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集的个人信息类型：</b></span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>设备信息：</b>设备型号、系统版本、硬件编解码能力</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>网络信息：</b>IP地址、网络质量数据</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>音视频数据：</b>通话期间的音频、视频流（实时传输，不存储）</span></p>
+
+    <p class="MsoNormal"><b><span style="color:#2E75B6;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">4. MediaKit媒体播放SDK</span></b></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>使用目的：</b>为您提供视频和音频的播放功能</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集方式：</b>SDK自动收集</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><b>收集的个人信息类型：</b></span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>设备信息：</b>GPU型号、硬件解码器信息、屏幕参数</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• <b>系统信息：</b>系统版本、音视频编解码能力</span></p>
+
+    <p class="MsoNormal"><b><span style="color:red;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">重要提示：</span></b></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 我们仅在您<b>明确同意本隐私政策后</b>才会初始化上述第三方SDK</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 在您同意隐私政策之前，APP不会调用任何可能收集个人信息的SDK接口</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 对于个推推送SDK，我们还会在您同意隐私政策后，单独征求您是否同意使用推送服务</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 您可以随时在设置中关闭推送通知以停止SDK收集信息</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（八）改善我们的产品和服务</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们会使用从APP本身和上述第三方SDK收集的信息来改善我们的产品和服务，包括但不限于：</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 分析产品使用情况，优化用户体验</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 排查崩溃原因，提升应用稳定性</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 优化消息推送的准确性和及时性</span></p>
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">• 改进音视频通话质量</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（九</span><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">）为您的安全提供保障</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为提高您使用我们及我们关联公司、合作伙伴提供服务的安全性，保护您或其他用户或公众的人身财产安全免遭侵害，更好地预防钓鱼网站、欺诈、网络漏洞、计算机病毒、网络攻击、网络侵入等安全风险，更准确地识别违反法律法规或</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">相关协议规则的情况。<b>我们可能使用或整合您的账户信息、设备信息、软件使用信息以及我们关联公司、合作伙伴取得您授权或依据法律共享的信息，</b>用于进行身份验证、检测及防范安全事件，并依法采取必要的记录、审计、分析、处置措施。</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（十</span><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"></span><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">）其他</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">如上文所述，<b>如果某一需要收集您的个人信息的功能或产品<span lang="EN">/</span>服务未能在本《HLZF隐私政策》中予以说明的，或者我们超出了与收集您的个人信息时所声称的目的及具有直接或合理关联范围的，我们将在收集和使用你的个人信息前，通过更新本《HLZF隐私政策》、页面提示、弹窗、消息通知、网站公告或其他便于您获知的方式另行向您说明，并为您提供自主选择同意的方式，且在征得您明示同意后收集和使用。</b></span></p>
+
+    <p class="MsoNormal"><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">征得授权同意的例外。</span></b><span lang="EN" style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><br>
+</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">根据相关法律法规规定，以下情形中收集您的个人信息无需征得您的授权同意：<span lang="EN"><br>
+1. </span>与国家安全、国防安全有关的；<span lang="EN"><br>
+2. </span>与公共安全、公共卫生、重大公共利益有关的；<span lang="EN"><br>
+3. </span>与犯罪侦查、起诉、审判和判决执行等有关的；<span lang="EN"><br>
+4. </span>出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到您本人同意的；<span lang="EN"><br>
+5. </span>所收集的个人信息是您自行向社会公众公开的；<span lang="EN"><br>
+6. </span>从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道；<span lang="EN"><br>
+7. </span>根据您的要求签订合同所必需的；<span lang="EN"><br>
+8. </span>用于维护所提供的产品或服务的安全稳定运行所必需的，例如发现、处置产品或服务的故障；<span lang="EN"><br>
+9. </span>为合法的新闻报道所必需的；<span lang="EN"><br>
+10. </span>学术研究机构基于公共利益开展统计或学术研究所必要，且对外提供学术研究或描述的结果时，对结果中所包含的个人信息进行去标识化处理的；<span lang="EN"><br>
+11. </span>法律法规规定的其他情形。</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">三、我们如何存储您的个人信息</span></b></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（一）存储地域</span></p>
+
+    <p class="MsoNormal"><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们在中华人民共和国境内收集和产生的个人信息将存储在中华人民共和国境内。</span></b><span lang="EN" style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;"><br>
+</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">若为处理跨境业务，确需向境外机构传输境内收集的相关个人信息的，我们会按照法律、行政法规和相关监管部门的规定执行。我们会确保您的个人信息得到足够的保护，例如匿名化、加密存储等。</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（二）存储期限</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们仅在本政策所属目的的所必须期间和法律法规要求的时限内存储您的个人信息。在超出上述存储期限后，我们会对您的个人信息进行删除或匿名化处理。</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">四、我们如何共享、转让、公开披露您的个人信息</span></b></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（一）共享</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们不会与任何公司、组织和个人共享您的个人信息，但以下情况除外：<span lang="EN"><br>
+1. </span>我们可能会根据法律法规规定、诉讼争议解决需要，或按行政、司法机关依法提出的要求，对外共享您的个人信息。<span lang="EN"><br>
+2. </span>在获取您明确同意的情况下，我们会与其他方共享您的个人信息。<span lang="EN"><br>
+3. </span>在我们的关联方向您或向我们提供服务的情况下，我们可能与我们的关联公司共享您的个人信息。但我们仅共享必要的个人信息，且关联方对您信息的处理受本隐私政策的约束。关联公司如要改变您个人信息的处理目的，将再次征求您的授权和同意。<span lang="EN"><br>
+4. </span>除非获得您的明确授权和同意，否则我们不会与第三方广告商、应用程序开发者、开放平台或其他合作伙伴共享您的个人信息。我们可能会为这些合作伙伴提供汇总后的信息、匿名化后的信息或者其他不会识别到您个人身份的信息。例如，我们可能会告知应用程序开发者有多少人安装过其开发的应用程序。<span lang="EN"><br>
+5. </span>仅为实现本隐私政策中声明的目的，我们可能会与我们的供应商、服务提供商、顾问或代理人共享您的个人信息，以提供更好的客户服务和用户体验。这些供应商、服务提供商、顾问、代理人可能为我们提供技术基础设施服务，分析我们服务的使用方式，衡量广告和服务的有效性，提供客户服务和支付服务，进行学术研究和调查，或提供法律、财务与技术顾问服务。<span lang="EN"><br>
+</span>对我们与之共享个人信息的公司、组织和个人，我们会与其签署严格的数据保护协定，要求其按照我们的说明、本隐私政策以及其他任何相关的保密和安全措施来处理个人信息。</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（二）转让</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们不会将您的个人信息转让给其他任何公司、组织和个人，但以下情形除外<span lang="EN"><br>
+1. </span>随着</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">司业务的发展，我们及我们的关联公司有可能进行合并、收购、资产转让或其他类似的交易。如相关交易涉及到您的个人信息转让，我们会要求新持有您个人信息的公司、组织和个人继续受此政策约束，否则我们将要求该公司、组织和个人重新征得您的授权同意。<span lang="EN"><br>
+2. </span>在获得您明确同意的情形下转让，亦即获得您明确同意后，我们会向其他方转让我们已经获取的您的个人信息。</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（三）披露</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们仅会在以下情况下，公开披露您的个人信息：<span lang="EN"><br>
+1. </span>已经获得您明确同意。<span lang="EN"><br>
+2. </span>在法律、法律程序、诉讼或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息。<span lang="EN"><br>
+3. </span>法律法规规定的其他情形。</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">五、我们如何保护您的个人信息</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们已采取符合业界标准的安全防护措施保护您提供的个人信息，防止数据遭到未经授权访问、公开披露、使用、修改、损坏或丢失。我们会采取一切合理可行的措施，保护您的个人信息。<span lang="EN"><br>
+1. </span>我们会对可识别的个人身份信息进行加密传输和存储，以确保数据的保密性。对于您手机设备标识符国际移动设备身份码（<span lang="EN">IMEI</span>），我们在您的设备端会用<span lang="EN">MD5</span>算法进行匿名化和加密，并仅收集和上传经过匿名化和加密后的标识符。<span lang="EN"><br>
+2. </span>我们为工作人员定期举办个人信息保护相关法律法规培训，以加强工作人员的用户个人隐私保护意识。<span lang="EN"><br>
+3. </span>如果不幸发生我们的物理、技术或管理防护措施遭到破坏的事件，我们会及时启动应急预案，防止安全事件扩大，按照法律法规的要求上报国家主管机关，并及时采取推送、公告等合理、有效的方式向您告知安全事件的基本情况、可能的影响、已经采取的措施或将要采取的措施等。</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">六、您管理个人信息的权利</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">在您使用HLZF期间，您可以通过以下方式访问并管理您的个人信息：</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（一）访问和更正您的个人信息</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">您可以通过</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">登录 </span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">用户中心查询和更正您的</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZF</span><span style="font-family:
+&quot;微软雅黑&quot;,&quot;sans-serif&quot;">账户信息以及您提供的信息，包括密码等信息。</span></p>
+
+    <p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（二）删除您的个人信息</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">以下情况发生时，您有权要求</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我司</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">删除您的个人信息：<span lang="EN"><br>
+1. </span>我们没有征求您的明确同意，收集了您的个人信息。<span lang="EN"><br>
+2. </span>我们处理您的个人信息违反了法律法规要求。<span lang="EN"><br>
+3. </span>我们违反了与您的约定来使用和处理您的个人信息。<span lang="EN"><br>
+5. </span>我们停止对您提供服务。<span lang="EN"><br>
+</span>您可以通过本隐私政策第九节提供的方式联系我们要求删除您的个人信息，我们会在<span lang="EN">15</span>个工作日内给予答复。当我们从服务器中删除您的个人信息后，我们可能不会立即从备份系统中删除相应的数据，但会在备份更新的时候删除这些信息。也可通过删除账号来删除您的个人信息</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">七、未成年人个人信息保护</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">未成年人使用我们的产品与<span lang="EN">/</span>或服务之前应首先取得其监护人的同意。如您为未成年人，在使用我们的产品与<span lang="EN">/</span>或服务前，应在监护人监护、指导下共同阅读本《HLZF隐私政策》，且应在监护人明确同意和指导下使用我们的产品与<span lang="EN">/</span>或服务、提交个人信息。我们根据国家相关法律法规的规定保护未成年人的个人信息，只会在法律法规允许、监护人明确同意或保护您的权益所必要的情况下收集、使用或公开披露未成年人的个人信息；若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过“如何联系我们”章节中的联系方式与我们联系。如果我们发现在未事先获得可证实的监护人同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关数据。
+</span></p>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">八、隐私政策的适用范围</span></b></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">本隐私政策仅适用于HLZF。</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我司</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">的其他产品和服务将使用相关产品或服务的隐私政策。特别需要说明的是，本隐私政策不适用以下情况：<span lang="EN"><br>
+1. </span>将</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我司产品</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（或服务）嵌入到第三方产品（或服务），第三方产品（或服务）收集的信息。<span lang="EN"><br>
+2. </span>在</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我司产品</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">（或服务）中接入的第三方服务、广告或其他公司、组织或个人所收集的信息。</span></p>
+
+    <p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span
+            style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">如果您对我们的服务回复不满意，特别是您认为我们的个人信息处理行为损害了您的合法权益，您还可以通过向被告住所地有管辖权的法院提起诉讼来寻求解决方案。</span>
+    </p>
+    <p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span
+            style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">附录：第三方合作</span><span
+            style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">SDK</span><span
+            style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;t">服务列表及其隐私政策链接明细表</span></p>
+    <p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span
+            style="font-family:宋体; font-size:10.5pt">为保障</span><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">HLZFApp
+      </span><span style="font-family:宋体; font-size:10.5pt">的稳定运行或实现相关功能，我们可能会接入由第三方提供的软件开发包（</span><span
+            style="font-family:Calibri; font-size:10.5pt">SDK</span><span
+            style="font-family:宋体; font-size:10.5pt">）实现前述目的。我们会进到审慎义务，对合作方获取信息的软件工具开发包（</span><span
+            style="font-family:Calibri; font-size:10.5pt">SDK</span><span
+            style="font-family:宋体; font-size:10.5pt">）进行严格的安全检测，以保护数据安全。</span></p>
+    <p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span
+            style="font-family:宋体; font-size:10.5pt">我们接入的第三方</span><span
+            style="font-family:Calibri; font-size:10.5pt">SDK</span><span
+            style="font-family:宋体; font-size:10.5pt">主要服务于您以及其他用户的需求，因此在满足新的服务需求及业务功能变更时我们可能会调整我们接入的第三方</span><span
+            style="font-family:Calibri; font-size:10.5pt">SDK</span><span
+            style="font-family:宋体; font-size:10.5pt">。我们会及时在本说明中向您公开说明接入第三方</span><span
+            style="font-family:Calibri; font-size:10.5pt">SDK </span><span
+            style="font-family:宋体; font-size:10.5pt">的最新情况。目前</span><span
+            style="font-family:Calibri; font-size:10.5pt"></span><span
+            style="font-family:宋体; font-size:10.5pt"></span><span
+            style="font-family:Calibri; font-size:10.5pt">HLZFApp</span><span
+            style="font-family:宋体; font-size:10.5pt">接入的第三方</span><span
+            style="font-family:Calibri; font-size:10.5pt">SDK</span><span
+            style="font-family:宋体; font-size:10.5pt">列明如下：</span></p>
+
+    <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt">
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:黑体; font-size:7pt; font-style:normal; text-transform:none">SDK名称</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:黑体; font-size:7pt; font-style:normal; text-transform:none">场景描述</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:黑体; font-size:7pt; font-style:normal; text-transform:none">个人信息类型</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:黑体; font-size:7pt; font-style:normal; text-transform:none">第三方机构名称</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">网易云信 IM 即时通讯</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">在使用软件IM客服功能的时候，需要授权内存读写权限，以便存储您的聊天记录。需要授权定位权限，以便发送位置信息。需要授权录音权限，以便发送语音信息。这样才能为客户提供更完善，体验更好的在线客服服务。</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"></span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">设备信息、IMEI、位置信息，音频信息</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">杭州网易质云科技有限公司    隐私权政策链接：https://netease.im/clauses?serviceType=3</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">RTC_Android  </span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">为实现即时通讯方案，需要使用RTC_Android  SDK</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"></span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">获取设备序列号、MAC、IMSI、IMEI、存储的个人文件、读取手机状态和身份、网络信息</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">杭州网易质云科技有限公司 SDK隐私政策链接：https://netease.im/clauses?serviceType=3</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">sqflite_release Flutter插件开发库</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">提供强大的关系型数据库支持。它适用于高效的本地数据存储,支持复杂查询和事务处理,具备良好的性能和易用性,帮助开发者轻松管理应用中的数据</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"></span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">获取设备序列号、MAC、IMSI、IMEI、存储的个人文件、读取手机状态和身份、网络信息</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">Flutter团队</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">移动智能终端补充设备标识体</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">为更好的识别设备标识符的唯一性</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"></span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">获取设备序列号、MAC、IMSI、IMEI、读取手机状态和身份、网络信息</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"> 中国信息通信  https://sdk.caict.ac.cn/official/#/home</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">极光推送 - JPush SDK</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">为 APP 用户提供信息推送服务，</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">为开发者赋予消息和通知的推送能力，实现向您的终端用户进行消息推送</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">设备标识符（包括AndroidID、GAID、OAID、UAID、IDFA、AAID）、设备硬件信息（包括设备型号、硬件序列号、设备屏幕分辨率、设备硬件制造商、设备产品名称、设备存储空间）、操作系统信息（包括操作系统版本、系统名称、系统语言）、网络信息（包括网络类型、运营商信息、IP地址、WIFI状态信息）、推送信息日志、设备标识符（包括IMEI、MAC、IMSI）、网络信息（包括SSID、BSSID、WiFi列表信息、基站信息）、软件列表信息（包括软件列表及软件运行列表信息）、位置相关信息。</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">深圳市和讯华谷信息技术有限公司   隐私政策地址https://www.jiguang.cn/license/privacy</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">极光安全认证</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">用于完成一键登录和号码认证，识别您终端用户的风险；
+设备标识符（包括IMEI、IDFA、Android ID、GAID、MAC、OAID、IMSI、MEID、UAID、ICCID）、硬件序列号：用于生成脱敏的终端用户设备唯一标识，防范用户账号安全风险；
+网络信息（包括网络类型、运营商名称、基站信息、IP地址、WiFi信息、SSID、BSSID）：用于判断用户是否连接了移动网络，锁定使用服务手机号，获取当前上网卡的预取号以及token信息，从而实现在移动网络状态下的一键登录服务；</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"></span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">用于给相应号码发送短信验证码,实现短信验证功能；同时，用于分析当前设备的风险等级，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。
+设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称）：用于确保所提供的产品和/或服务在不同设备上的兼容性，检测黑产恶意伪造设备；
+操作系统信息（包括操作系统版本、系统名称、系统语言）：用于确保所提供的产品和/或服务在不同设备上的兼容性；
+精确位置信息：用于按照地域提供登录报表，校准数据的地区分布；识别设备异常等团伙攻击/识别地理位置伪造，保护用户账号安全等；
+软件列表信息（包括软件列表及软件运行列表信息）：用于识别用户应用环境及判断已安装的APP信息，帮助您识别异常软件与拦截机器程序的批量自动化操作，保护用户账号安全等。</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">深圳市和讯华谷信息技术有限公司   隐私政策地址 https://www.jiguang.cn/license/privacy</span>
+                </p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">个推SDK</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">为应用提供消息推送服务，保障消息的及时准确触达</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">设备标识信息（OAID、GAID）- 用于生成推送目标标识，实现消息的精准推送
+
+网络信息（IP地址、网络状态）- 用于优化推送通道，保障消息传输稳定
+
+设备型号及系统版本 - 用于适配不同设备的推送服务</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">浙江每日互动网络科技股份有限公司  隐私政策地址 https://docs.getui.com/privacy/</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">消息推送 SDK Android</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">为应用提供消息推送服务，保障消息的及时准确触达</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">设备标识信息（仅OAID、GAID） ：用于生成推送目标标识，实现消息的精准推送，OAID为匿名设备标识符，支持用户重置
+
+网络信息（IP地址、网络状态、WiFi连接状态） ：用于优化推送通道，保障消息传输稳定
+
+设备信息（设备型号、操作系统版本） ：用于适配不同设备的推送服务</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">浙江每日互动网络科技股份有限公司  隐私政策地址 https://docs.getui.com/privacy/</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">vivo PUSH-SDK</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">用于在vivo手机终端提供消息推送服务，确保您能及时收到聊天消息、语音通话和视频通话的通知，同时用于统计推送SDK接口调用成功率以保障服务质量。</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none"></span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">应用基本信息（appid、appkey、应用包名、应用版本号、pushSDK版本）
+
+应用内设备标识符（regid）
+
+设备的硬件信息（设备类型，如手机、平板等）
+
+系统基本信息（系统类型、系统版本）</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">维沃移动通信有限公司   https://dev.vivo.com.cn/documentCenter/doc/878</span>
+                </p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">腾讯浏览服务 X5 网页引擎 SDK </span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">x5内核渲染webview</span><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">,更好更快的加载网页</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">获取设备序列号、MAC、IMSI、IMEI、存储的个人文件、读取手机状态和身份、网络信息</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">深圳市腾讯计算机系统有限公司     SDK隐私政策链接：https://rule.tencent.com/rule/preview/1c4e2b4b-d0f6-4a75-a5c6-1cfce00a390d</span>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">友盟移动统计SDK</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.7pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">对用户浏览页面和点击行为进行采集统计分析服务</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:95.75pt">
+                <p style="margin:0pt; text-align:center"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none;color:#f00;">获取Android_ID、硬件序列号、个人常用设备信息、个人位置信息、WIFI连接信息、运营商信息、DHCP、SSID、BSSID、Wi-Fi SSID、Wi-Fi BSSID，主要用于生成唯一的推送目标ID（CID）和设备ID（GID）</span>
+                </p>
+            </td>
+            <td
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:95.75pt">
+                <p style="margin:0pt"><span
+                        style="background-color:#ffffff; font-family:微软雅黑; font-size:6.5pt; font-style:normal; text-transform:none">友盟同欣（北京）科技有限公司</span>
+                </p>
+            </td>
+        </tr>
+
+    </table>
+
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">九、隐私政策的变更和修订</span></b></p>
+
+    <p class="MsoNormal"><b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">我们鼓励您在每次使用我们的产品或服务时都查阅我们的《HLZF隐私政策》。</span></b><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">为了给您提供更好的服务，我们会根据产品的更新情况及法律法规的相关要求更新本《HLZF隐私政策》的条款，该类更新构成本《HLZF隐私政策》的一部分。未经您明确同意，我们不会限制您按照本隐私政策所应享有的权利。</span></p>
+
+    <p class="MsoNormal"><span style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">对于本隐私政策的重大变更，我们还会提供显著的通知（例如，在软件改版或升级、或您重新登录时，以弹窗形式对您进行及时通知）。若您继续使用我们的服务，即表示您充分阅读、理解并同意受经修订的《HLZF隐私政策》的约束。为保障您的合法权益，我们建议您可以定期在我们平台的“设置<span lang="EN">-</span>用户隐私政策”中查看本政策。<span lang="EN"><br>
+</span>本政策所指的重大变更包括但不限于：<span lang="EN"><br>
+1. </span>我们的服务模式发生重大变化。如处理个人信息的目的、处理的个人信息类型、个人信息的使用方式等；<span lang="EN"><br>
+2. </span>我们在控制权等方面发生重大变化。如并购重组等引起的所有者变更等；<span lang="EN"><br>
+3. </span>个人信息共享、转让或公开披露的主要对象发生变化；<span lang="EN"><br>
+4. </span>您参与个人信息处理方面的权利及其行使方式发生重大变化；<span lang="EN"><br>
+5. </span>我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化时；<span lang="EN"><br>
+6. </span>个人信息安全影响评估报告表明存在高风险时。</span></p>
+    <p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">十、如何联系我们</span></b></p>
+    <p class="MsoNormal">
+        如果您对我们的隐私政策及对您个人信息的处理有任何疑问、意见、建议或投诉，请通过以下方式与我们联系：<br>
+        公司名称：武汉市浩长飒科技有限公司<br>
+        办公地址：湖北省武汉市黄陂区盘龙城经济开发区汤云海路2号盘龙古肆巢立方1栋/单元1层5室<br>
+        联系邮箱：zhongjin4568@163.com<br>
+        联系人：李经昆<br>
+        联系电话：18565586537<br>
+        在一般情况下，我们会在10个工作日内对您的请求予以答复。<br>
+    </p>
+    <p class="MsoNormal"><span lang="EN-US" style="font-family:&quot;微软雅黑&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+</div>
+
+
+
+</body></html>
